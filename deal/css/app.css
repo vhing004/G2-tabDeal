@@ -16,9 +16,12 @@
 }
 
 .softWare {
+  max-width: 1300px;
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .softWare-left {
   max-width: 530px;
@@ -57,12 +60,11 @@
 }
 @media screen and (max-width: 770px) {
   .softWare {
-    max-width: 750px;
+    max-width: 1000px;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .softWare-left {
     max-width: 770px;
@@ -108,7 +110,7 @@
   }
 }
 .softwareContent {
-  max-width: 740px;
+  max-width: 800px;
   width: 100%;
 }
 .softwareContent-more1 {
@@ -157,7 +159,7 @@
 .softwareContent-feedback {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 10px;
 }
 .softwareContent-rate {
@@ -179,12 +181,19 @@
   object-fit: contain;
 }
 
+.tab-content {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 1100px) {
   .softwareContent-lists {
     grid-template-columns: repeat(2, 1fr);
   }
   .softwareContent-item {
-    max-width: 200px;
+    max-width: 350px;
   }
   .softwareContent-item:last-child {
     display: none;
@@ -198,8 +207,8 @@
 }
 @media screen and (max-width: 770px) {
   .softwareContent-lists {
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 15px;
   }
   .softwareContent-more1 {
     display: none;
@@ -218,7 +227,7 @@
     height: 60px;
   }
   .softwareContent-item {
-    max-width: 180px;
+    max-width: 380px;
     width: 100%;
     height: 140px;
   }
@@ -235,19 +244,33 @@
 }
 @media screen and (max-width: 620px) {
   .softwareContent {
-    max-width: 550px;
+    max-width: 750px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   .softwareContent-lists {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .softwareContent-more {
     margin-top: 20px;
   }
   .softwareContent-item {
-    width: 300px;
+    max-width: 390px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .softwareContent-rate {
+    font-size: 13px;
+  }
+  .softwareContent-item {
+    max-width: 200px;
+    width: 100%;
+  }
+  .softwareContent-img img {
+    width: 60px;
+    height: 50px;
   }
 }
 
