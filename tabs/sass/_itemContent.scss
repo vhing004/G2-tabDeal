@@ -1,0 +1,141 @@
+.itemContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid $border;
+  background-color: $white;
+  margin-bottom: 25px;
+  width: 100%;
+  &-main {
+    display: flex;
+    gap: 10px;
+  }
+  &-img {
+    & img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border: 1px solid $border;
+    }
+  }
+  &-content {
+    width: 100%;
+  }
+  &-name {
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &-save {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    & ion-icon {
+      color: $orange-thin;
+      cursor: pointer;
+    }
+  }
+  &-like {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $black;
+  }
+  &-feedback {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+  }
+  &-rate {
+    color: $orange-thin;
+    font-size: 15px;
+  }
+  &-number {
+    font-size: 15px;
+    color: $blue;
+    font-weight: 500;
+  }
+  &-desc {
+    color: $gray-50;
+  }
+  &-more {
+    & span {
+      color: $gray-50;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-deal {
+    max-width: 150px;
+  }
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 5px;
+    & img {
+      width: 24px;
+      object-fit: cover;
+    }
+    & span {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  &-sale {
+    font-size: 15px;
+    font-weight: 600;
+    color: $orange-thin;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  &-price {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 600;
+    color: $gray-50;
+    &:nth-child(3) {
+      text-decoration: line-through;
+      font-weight: 500;
+      color: #a7a7ac;
+    }
+  }
+  &-btn{
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 0;
+    color: $white;
+    background-color: $blue-clor;
+    height: 38px;
+    line-height: 38px;
+    width: 140px;
+    &:hover{
+        background-color: $blue;
+    }
+  }
+}
+/* Responsive */
+  @media screen and (max-width: 800px) {
+    .itemContent {
+      display: block;
+      max-width: 650px;
+      &-deal {
+        max-width: 600px;
+        text-align: right;
+      }
+    }
+  }
